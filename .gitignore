@@ -1,2 +1,7 @@
 *.exe
 .vscode/:
+diff.txt
+in.txt
+out.txt
+compare.cpp
+std.txt
