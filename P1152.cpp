@@ -4,22 +4,25 @@ using namespace std;
 
 int main()
 {
-    freopen('in.txt','r',stdin);
-    freopen('out.txt','w',stdout);
+    //freopen("in.txt","r",stdin);
+    //freopen("out.txt","w",stdout);
     int n;
     cin>>n;
     int a[1005];
     for(int i=0;i<n;i++)
         cin>>a[i];
-    vector<int> diff;
-    for(int i=0;i<n;i++)
-        for(int j=i+1;j<n;j++)
-            diff.push_back(abs(a[i]-a[j]));
-    for(int i=0;i<diff.size();i++){
-        for(int j=0;j<n;j++)
-        
+    int c[1005];
+    for(int i=1;i<n;i++)
+        c[i]=abs(a[i]-a[i-1]);
+    sort(c+1,c+n);
+    for(int i=1;i<n;i++){
+        if(c[i]!=i){
+            cout<<"Not jolly"<<endl;
+            return 0;
+        }
     }
-    fclose(stdin);
-    fclose(stdout);
+    cout<<"Jolly"<<endl;
+    //fclose(stdin);
+    //fclose(stdout);
     return 0;
 }
