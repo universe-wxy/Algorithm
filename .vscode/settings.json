@@ -1,4 +1,9 @@
 {
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "C_Cpp.errorSquiggles": "Enabled"
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.associations": {
+        "cmath": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
 }
