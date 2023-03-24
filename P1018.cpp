@@ -10,7 +10,7 @@ int cut(int st,int ed){
     int ans=0;
     for(int i=st;i<=ed;i++)
         ans=ans*10+a[i];
-    return ans;z
+    return ans;
 }
 
 int main()
