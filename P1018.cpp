@@ -20,8 +20,8 @@ int main()
 
     cin>>n>>k_max; 
     cin>>nums_str;
-    for(int i=0;i<n;i++){
-        a[i]=nums_str[i]-'0';
+    for(int i=1;i<=n;i++){
+        a[i]=nums_str[i-1]-'0';
         f[i][0]=a[i];
     }
     for(int i=2;i<=n;i++) 
